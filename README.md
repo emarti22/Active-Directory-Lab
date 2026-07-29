@@ -14,7 +14,7 @@ The services that DC01 is running include Active Directory, DHCP, DNS, and Remot
 
 ![Client IP Config](screenshots/Client-ipconfig.PNG)
 
-The DNS records reflect that everything is working
+## The DNS records reflect that everything is working
 
 ![DNS Records](screenshots/DNS-records.PNG)
 
