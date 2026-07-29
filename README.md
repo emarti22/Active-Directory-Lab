@@ -18,7 +18,7 @@ The services that DC01 is running include Active Directory, DHCP, DNS, and Remot
 
 ![DNS Records](screenshots/DNS-records.PNG)
 
-## 1000 Users were added to the domain using powershell including CLIENT01's current user emartin.
+## 1000 Users were added to the domain using PowerShell including CLIENT01's current user emartin.
 
 ![Users](screenshots/Users.PNG)
 
