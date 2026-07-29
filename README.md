@@ -32,8 +32,16 @@ The services that DC01 is running include Active Directory, DHCP, DNS, and Remot
 
 ![Attempting to make an administrative change with a-emartin](screenshots/client-admin-verification1.png)
 
-## Attempting to open the client's network adapter properties requires elevated access, let's see if a-emartin, the sole member of the _ADMINS OU, is able to get through. 
+## Attempting to open the client's network adapter properties requires elevated access, let's see if a-emartin is able to get through. 
 
 ![Success!](screenshots/client-admin-verification2.png)
 
 ## The login worked, a-emartin was able to sign in.
+
+## And if we attempt to sign in as aabrev, a member of the _USERS group:
+
+![aabrev-attempt1](screenshots/aabrev-attempt1.PNG)
+
+![aabrev-attempt1](screenshots/aabrev-attempt2.PNG)
+
+## The attempt fails, and as shown in the second image this is because aabrev is not a member of _ADMINS, therefore permissions work as intended.
