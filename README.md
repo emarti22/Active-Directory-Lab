@@ -46,4 +46,4 @@ The services that DC01 is running include Active Directory, DHCP, DNS, and Remot
 
 ## The attempt fails, and as shown in the second image this is because aabrev is not a member of _ADMINS, therefore permissions work as intended.
 
-# It seems I messed up the GPO and I need to redo this part. Added another user to _ADMINS and they did not get privileges. 
+# It seems I messed up the GPO and I need to redo this part. Added another user to _ADMINS and they did not get privileges. Change to enforcing a Wallpaper for _USERS.
