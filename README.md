@@ -32,8 +32,8 @@ The services that DC01 is running include Active Directory, DHCP, DNS, and Remot
 
 ![Attempting to make an administrative change with a-emartin](screenshots/client-admin-verification1.png)
 
-Attempting to open the client's network adapter properties requires elevated access, let's see a-emartin the sole member of the _ADMINS OU is able to login. 
+## Attempting to open the client's network adapter properties requires elevated access, let's see if a-emartin, the sole member of the _ADMINS OU, is able to get through. 
 
 ![Success!](screenshots/client-admin-verification2.png)
 
-The login worked, a-emartin was able to sign in.
+## The login worked, a-emartin was able to sign in.
