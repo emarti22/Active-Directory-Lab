@@ -60,4 +60,4 @@ This GPO is functioning properly.
 
 ![GPO2-1](screenshots/GPO2-1.PNG)
 
-![GPO2-success](GPO2-success.PNG)
+![GPO2-success](screenshots/GPO2-success.PNG)
