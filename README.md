@@ -20,11 +20,13 @@ The services that DC01 is running include Active Directory, DHCP, DNS, and Remot
 
 ![DNS Records](screenshots/DNS-records.PNG)
 
-### DNS is able to resolve both DC01 and CLIENT1's request to ping each other, so we know it is working.
+### DNS is able to resolve both DC01 and CLIENT1's request to ping each other, so we know it is working:
 
 ![DNS client>dc](screenshots/DNS-records2.PNG)
 
 ![DNS dc>client](screenshots/DNS-records3.PNG)
+
+The firewall rule "File and Printer Sharing (Echo Request)" was disabled for Domains preventing DC01 sending packets to CLIENT1. However, after enabling this rule on CLIENT1 the packets sent successfully.
 
 ### The Organizational Units _ADMINS, _USERS, and Domain Controllers were created and 1000 Users were added to the _USERS group using a PowerShell script and a text file with 1000 random names.
 
