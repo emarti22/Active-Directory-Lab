@@ -2,7 +2,7 @@
 Active Directory home lab demonstrating Windows Server administration, user management, DNS, DHCP, and Group Policy.
 # Goals
 ### Set up a domain controller with Active Directory, DHCP, and DNS.
-### Disable the control panel and command prompt on client machines logged in as one of 1000 users in an Organizational Group called _USERS using Group Policy. 
+### Disable the control panel for members of an Organizational Group called _USERS using Group Policy, and a message for any user who logs onto a PC in the Organizational Group called _USERS Workstations. Users and hosts not in either group will be unaffected. 
 
 # Details and screenshots
 ### Domain Controller DC01 and its services:
@@ -40,8 +40,24 @@ The firewall rule "File and Printer Sharing (Echo Request)" was disabled for Dom
 
 ![GPO2](screenshots/GPO-2.PNG)
 
+### We don't want this to apply to Domain Admins, so the GPO is set to Deny for Apply group policy:
+
 ![GPO3](screenshots/GPO-3.PNG)
+
+### Now on the client machine aloy, a member of the _USERS OU, tries to open the control panel but fails:
 
 ![GPO-success1](screenshots/GPO-success1.PNG)
 
 ![GPO-success2](screenshots/GPO-success2.PNG)
+
+### And for a-emartin, a member of Domain Admins is able to open the control panel:
+
+![GPO-success3.PNG](screenshots/GPO-success3.PNG)
+
+This GPO is functioning properly. 
+
+### For the logon message for the computers of _USERS Workstations OU, I wrote a legal notice that activity on the computer can be recorded.
+
+![GPO2-1](screenshots/GPO2-1.PNG)
+
+![GPO2-success](GPO2-success.PNG)
